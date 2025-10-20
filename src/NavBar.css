@@ -1,0 +1,58 @@
+@import url("style.css");
+
+.navbar {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 0 2rem;
+    justify-content: space-between;
+    height: 4.5rem;
+}
+
+.navbar p a{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--orange);
+    padding-right: 0.1rem;
+}
+
+.logo img {
+    width: 15px;
+    align-self: end;
+}
+
+.navbar li a {
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: var(--light-blue);
+    padding: 0.5rem;
+}
+
+.navbar li a:hover {
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+ .menu-icon {
+    display: none; 
+  }
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; 
+  }
+
+  .nav-links {
+    display: none; 
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+}
