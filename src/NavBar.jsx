@@ -10,10 +10,7 @@ const Navbar = () => {
         <img src="../assets/images/logo_icon.png" alt=""/>
       </div>
 
-      <div
-        className="menu-icon"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </div>
 

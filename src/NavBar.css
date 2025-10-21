@@ -1,10 +1,11 @@
-@import url("style.css");
+@import url("../style.css");
 
 .navbar {
     width: 100%;
     background-color: var(--blue);
     padding: 0 2rem;
     justify-content: space-between;
+    align-items: center;
     height: 4.5rem;
 }
 
@@ -34,6 +35,7 @@
 
  .menu-icon {
     display: none; 
+    color: var(--orange);
   }
 
 @media (max-width: 768px) {

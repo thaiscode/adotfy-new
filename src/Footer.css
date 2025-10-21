@@ -2,6 +2,7 @@
 
 .footer {
     justify-content: center;
+    align-items: center;
     background-color: var(--blue);
     height: 2.5rem;
     font-weight: bold;

@@ -7,7 +7,7 @@
 :root {
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
-    --grey: hsla(0, 0%, 85%, 100%);
+    --grey: rgb(240, 240, 240);
     --orange: hsla(21, 89%, 52%, 100%);
     --blue: hsla(237, 100%, 25%, 100%);
     --light-blue: #A59AFF;
@@ -39,13 +39,20 @@ li {
 
 .flex {
     display: flex;
-    
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 h1 {
     color: var(--blue);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: var(--orange);
+    text-align: center;
 }
 
 .button {
@@ -59,22 +66,74 @@ h1 {
     font-weight: 700;
 }
 
-.hero {
-    padding: 3rem 0;
+.hero, .info, .steps {
+    width: clamp(375px, 100%, 1440px);
     justify-content: space-evenly;
+    padding: 3rem;
+    background-color: var(--grey);
+}
+
+.hero__box {
+    width: clamp(375px, 40%, 720px);
+}
+
+.hero__box:nth-child(1) {
+    align-content: center;
 }
 
 .hero__title {
-    max-width: 400px;
     font-size: 3rem;
-    margin-bottom: 24px;
     line-height: 90%;
 }
 
 .hero__img {
-    max-width: 450px;
     border-radius: 20px;
 }
-.hero__box {
-    max-width: 50%;
+
+.info {
+    background-color: var(--white);
+    align-items: center;
+}
+
+.info__box {
+    width: clamp(375px, 30%, 460px);
+    padding: 1rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.info__box h3 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.info__box p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.steps {
+    background-color: var(--blue);
+    align-items: center;
+}
+
+.steps__img img{
+    border-radius: 20px;
+}
+
+.steps__text__box h3 {
+    font-size: 1.75rem;
+    color: var(--orange);
+}
+
+.steps__text__box p {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.steps__text__box span {
+    padding-right: 0.5rem;
+}
+.steps__text__box {
+    padding-bottom: 1.5rem;
 }
