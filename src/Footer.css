@@ -1,0 +1,14 @@
+@import url("../style.css");
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    height: 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer p {
+    color: var(--light-blue);
+}

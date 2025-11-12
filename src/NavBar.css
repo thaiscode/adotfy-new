@@ -1,0 +1,76 @@
+@import url("../style.css");
+
+.flex {
+  display: flex;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+}
+
+.navbar p a{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--orange);
+    padding-right: 0.1rem;
+}
+
+.logo img {
+    width: 15px;
+    align-self: end;
+}
+
+.navbar li a {
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: var(--light-blue);
+    padding: 0.5rem;
+}
+
+.navbar li a:hover {
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+ .menu-icon {
+    display: none; 
+    color: var(--orange);
+  }
+
+  .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 1.5rem 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; 
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue);
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+}
