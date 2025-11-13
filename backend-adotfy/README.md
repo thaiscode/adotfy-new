@@ -3,5 +3,5 @@ Deploy feito na plataforma Vercel
 Link: https://adotfy-api.vercel.app
 
 ## Endpoints
-Animais para adoção: https://adotfy-api.vercel.app/pets <br>
-Animais perdidos: https://adotfy-api.vercel.app/pets-perdidos
+Lista de animais para adoção: https://adotfy-api.vercel.app/pets <br>
+Lista de animais perdidos: https://adotfy-api.vercel.app/pets-perdidos
