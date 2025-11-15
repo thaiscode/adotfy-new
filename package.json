@@ -1,5 +1,5 @@
 {
-  "homepage": "https://thaiscode.github.io/adotfy/",
+  "homepage": "https://thaiscode.github.io/adotfy",
 
   "dependencies": {
     "react": "^19.2.0",
@@ -18,6 +18,6 @@
     "preview": "vite preview",
 
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "main -d dist"
   }
 }
