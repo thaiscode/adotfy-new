@@ -17,7 +17,7 @@ const Perdidos = () => {
 
   for (let i = 0; i < 8; i++) {
     const pet = perdidos[i];
-    const imgPath = `/assets/images/Perdidos/${i + 1}.jpg`;
+    const imgPath = `/assets/images/perdidos/${i + 1}.jpg`;
 
     if (pet) {
       perdidosCards.push(

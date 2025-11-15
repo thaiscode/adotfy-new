@@ -15,7 +15,7 @@ const Pets = () => {
 
   for (let i = 0; i < 8; i++) {
     const pet = pets[i];
-    const imgPath = `/assets/images/Adoção/${i + 1}.jpg`;
+    const imgPath = `/assets/images/adocao/${i + 1}.jpg`;
 
     if (pet) {
       petCards.push(
