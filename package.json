@@ -18,6 +18,6 @@
     "preview": "vite preview",
 
     "predeploy": "npm run build",
-    "deploy": "main -d dist"
+    "deploy": "gh-pages -d dist"
   }
 }
