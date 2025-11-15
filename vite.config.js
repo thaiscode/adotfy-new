@@ -5,6 +5,15 @@ import { resolve } from "path";
 export default defineConfig({
   plugins: [react()],
   base: "./", 
+  server: {
+    proxy: {
+      "/pets-api": {
+        target: "https://adotfy-api.vercel.app",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
   build: {
     rollupOptions: {
       input: {

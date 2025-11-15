@@ -9,6 +9,7 @@ import ONG from "./ONG.jsx";
 import Perdidos from "./Perdidos.jsx";
 import Footer from "./footer.jsx";
 
+
 function renderIfExists(id, component) {
   const el = document.getElementById(id);
   if (el) {
@@ -22,3 +23,4 @@ renderIfExists("pets-root", <Pets/>);
 renderIfExists("ong-root", <ONG/>);
 renderIfExists("perdidos-root", <Perdidos/>);
 renderIfExists("footer-root", <Footer/>);
+
