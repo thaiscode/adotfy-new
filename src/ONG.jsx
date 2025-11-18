@@ -7,7 +7,7 @@ const ONG = () => {
         <div className="ong__text">
             <h2>Nossas ONGs parceiras</h2>
             <p>Atualmente contamos com 3 ONGs associadas. <br/> Quer fazer parte do nosso time?</p>
-            <button className="button"><a href="ONGs.html">Cadastrar ONG</a></button>
+            <button className="button"><a href="ongs.html">Cadastrar ONG</a></button>
         </div>
         <div className="ong__img flex">
             <div className="ong__img__box">
